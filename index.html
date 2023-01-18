@@ -41,35 +41,37 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem, omnis laboriosam adipisci assumenda praesentium nemo ipsa, nulla ad alias laudantium totam aliquid aspernatur, quod neque animi eum sit vitae.</p>
                 
                     <div class="tab-titles">
-                        <p class="tab-link active-tab">Skills</p>
-                        <p class="tab-link">Experience</p>
-                        <p class="tab-link">Education</p>
+                        <p class="tab-link active-tab" onclick="toggle_tab('skills')">Skills</p>
+                        <p class="tab-link" onclick="toggle_tab('experience')">Experience</p>
+                        <p class="tab-link" onclick="toggle_tab('education')">Education</p>
                     </div>
 
-                    <div class="tab-contents active">
+                    <div class="tab-contents active" id="skills-tab">
                         <ul>
                             <li><span>Django</span><br>Django backend development</li>
                             <li><span>Python</span><br>Python developer</li>
                             <li><span>Web Design</span><br>Web Design using html cass js</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience-tab">
                         <ul>
-                            <li><span>Django</span><br>Django backend development</li>
-                            <li><span>Python</span><br>Python developer</li>
+                            <li><span>Singer</span><br>Django backend development</li>
+                            <li><span>Manager</span><br>Python developer</li>
                             <li><span>Web Design</span><br>Web Design using html cass js</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education-tab">
                         <ul>
-                            <li><span>Django</span><br>Django backend development</li>
-                            <li><span>Python</span><br>Python developer</li>
-                            <li><span>Web Design</span><br>Web Design using html cass js</li>
+                            <li><span>JSC</span><br>Django backend development</li>
+                            <li><span>SSC</span><br>Python developer</li>
+                            <li><span>HSC</span><br>Web Design using html cass js</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
