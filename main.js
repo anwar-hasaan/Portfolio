@@ -1,20 +1,14 @@
 // toggle tabs
-function toggle_tab(tab){
-    let skill = document.getElementById('skills-tab');
-    let experience = document.getElementById('experience-tab');
-    let education = document.getElementById('education-tab');
+let tablinks = document.getElementsByClassName('tab-link');
+let tabcontents = document.getElementsByClassName('tab-contents');
 
-    if(tab === 'skills'){
-        skill.style.display = 'block';
-        experience.style.display = 'none';
-        education.style.display = 'none';
-    }else if(tab === 'experience'){
-        experience.style.display = 'block';
-        skill.style.display = 'none';
-        education.style.display = 'none';
-    }else if(tab === 'education'){
-        education.style.display = 'block';
-        experience.style.display = 'none';
-        skill.style.display = 'none';
+function open_tab(tabname){
+    for (let tablink of tablinks) {
+        tablink.classList.remove('active-tab');
     }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove('active');
+    }
+    event.currentTarget.classList.add('active-tab');
+    document.getElementById(tabname).classList.add('active');
 }
