@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img class="logo" src="images/logo.png" alt="Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="close_menu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="open_menu()"></i>
             </nav>
             <div class="header-text">
                 <p style="line-height: 3.5rem;">Django Develpoer</p>
@@ -142,20 +144,26 @@
                     <p> <i class="fas fa-paper-plane"></i> contact@gmail.com</p>
                     <p> <i class="fas fa-phone-square-alt"></i> 01910041442</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-twitter-square"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
+                    <a href="#" class="btn cv-btn">Download CV</a>
                 </div>
                 <div class="contact-right">
+                    <h1 class="sub-title">Send Message</h1>
                     <form>
                         <input type="text" name="name" placeholder="Your name" required>
                         <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="message" rows="6"></textarea>
-                        <button type="submit">Submit</button>
+                        <textarea name="message" rows="6" placeholder="Type message here..."></textarea>
+                        <input type="submit" class="btn submit-btn" value="Send">
                     </form>
                 </div>
             </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2023, Anwar Hasan.</p>
         </div>
     </div>
 
